@@ -58,23 +58,6 @@
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link <?= !in_array($page, ['pages', 'pages/welcome_page', 'pages/about_page']) ? 'collapsed' : '' ?>" data-bs-target="#pages-nav" data-bs-toggle="collapse" href="#" data-bs-collapse="<?= in_array($page, ['pages', 'pages/welcome_page', 'pages/about_page']) ? 'true' : 'false' ?>">
-      <i class="bi bi-window-sidebar"></i><span>Pages</span><i class="bi bi-chevron-down ms-auto"></i>
-    </a>
-    <ul id="pages-nav" class="nav-content collapse <?= in_array($page, ['pages', 'pages/welcome_page', 'pages/about_page']) ? 'show' : '' ?> " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="<?= base_url.'admin/?page=pages/welcome_page' ?>" class="<?= $page == 'welcome_page' ? 'active' : '' ?>">
-          <i class="bi bi-circle"></i><span>Welcome Page</span>
-        </a>
-      </li>
-      <li>
-        <a href="<?= base_url.'admin/?page=pages/about_page' ?>" class="<?= $page == 'about_page' ? 'active' : '' ?>">
-          <i class="bi bi-circle"></i><span>About Page</span>
-        </a>
-      </li>
-    </ul>
-  </li>
-  <li class="nav-item">
     <a class="nav-link <?= $page != 'inquiries' ? 'collapsed' : '' ?> nav-users" href="<?= base_url."admin?page=inquiries" ?>">
       <i class="bi bi-inbox"></i>
       <span>Messages</span>

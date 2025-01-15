@@ -11,12 +11,6 @@
       backdrop-filter: brightness(.7);
       overflow-x:hidden;
     }
-    /* #page-title{
-      text-shadow: 6px 4px 7px black;
-      font-size: 3.5em;
-      color: #fff4f4 !important;
-      background: #8080801c;
-    } */
     .logo img {
         max-height: 55px;
         margin-right: 25px;
@@ -85,11 +79,6 @@
               </div>
 
               <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-                Template Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
               </div>
 
             </div>

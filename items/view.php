@@ -41,8 +41,6 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 						<dd class="ps-4"><?= $fullname ?? "" ?></dd>
 						<dt class="text-muted">Contact No.</dt>
 						<dd class="ps-4"><?= $contact ?? "" ?></dd>
-						<dt class="text-muted">Description</dt>
-						<dd class="ps-4"><?= isset($description) ? str_replace("\n", "<br>", ($description)) : "" ?></dd>
                     </dl>
                 </div>
             </div>

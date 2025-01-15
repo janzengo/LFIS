@@ -4,30 +4,42 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="<?= base_url ?>" class="logo d-flex align-items-center">
         <img src="<?= validate_image($_settings->info('logo')) ?>" alt="System Logo">
-        <span class="d-none d-lg-block"><?= $_settings->info('short_name') ?></span>
+        <span class="d-none d-lg-block">LostButFound</span>
       </a>
-    </div><!-- End Logo -->
-    <nav class="header-nav me-auto">
-      <ul class="d-flex align-items-center h-100">
-        <li class="nav-item pe-3">
-            <a href="<?= base_url ?>" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item pe-3">
-            <a href="<?= base_url.'?page=items' ?>" class="nav-link">Lost and Found</a>
-        </li>
-        <li class="nav-item pe-3">
-            <a href="<?= base_url.'?page=found' ?>" class="nav-link">Post an Item</a>
-        </li>
-        <li class="nav-item pe-3">
-            <a href="<?= base_url."?page=about" ?>" class="nav-link">About</a>
-        </li>
-        <li class="nav-item pe-3">
-            <a href="<?= base_url.'?page=contact' ?>" class="nav-link">Contact Us</a>
-        </li>
-      </ul>
-    </nav><!-- End Icons Navigation -->
-    <div class="d-flex align-items-center justify-content-between">
-            <a href="<?= base_url.'admin' ?>" class="btn btn-primary">Login</a>
     </div>
+    
+    <!-- End Logo -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="<?= base_url ?>" class="nav-link <?= $activePage === 'home' ? 'active' : '' ?>">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url."?page=about" ?>" class="nav-link <?= $activePage === 'about' ? 'active' : '' ?>">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url.'?page=items' ?>" class="nav-link <?= $activePage === 'items' ? 'active' : '' ?>">Lost and Found</a>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url.'?page=found' ?>" class="nav-link <?= $activePage === 'found' ? 'active' : '' ?>">Post an Item</a>
+      </li>
+      <li class="nav-item">
+        <a href="<?= base_url.'?page=contact' ?>" class="nav-link <?= $activePage === 'contact' ? 'active' : '' ?>">Contact Us</a>
+      </li>
+    </ul>
   </div>
+</nav>
+
+    <!-- End Icons Navigation -->
+
+
+    <!-- Removed the admin login button for security  -->
+
+
+  </div>
+  <div class="navbar-backdrop"></div>
 </header><!-- End Header -->

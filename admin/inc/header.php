@@ -28,24 +28,14 @@
     <!-- Template Main CSS File -->
     <link href="<?= base_url ?>assets/css/style.css" rel="stylesheet">
     <link href="<?= base_url ?>assets/css/custom.css" rel="stylesheet">
+    <link href="<?= base_url ?>assets/css/customStyle.css" rel="stylesheet">
 
     <!-- jQUery -->
     <script src="<?= base_url ?>assets/js/jquery-3.6.4.min.js"></script>
     <script src="<?= base_url ?>assets/js/script.js"></script>
         <script src="<?= base_url ?>assets/vendor/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-    <!-- =======================================================
-    * Template Name: NiceAdmin
-    * Updated: Mar 09 2023 with Bootstrap v5.2.3
-    * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-
-
     <script>
         var _base_url_ = '<?php echo base_url ?>';
     </script>
     <script src="<?php echo base_url ?>dist/js/script.js"></script>
-    <?php echo html_entity_decode($_settings->load_data()); ?>
   </head>

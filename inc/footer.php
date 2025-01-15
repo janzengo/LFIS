@@ -55,15 +55,31 @@
     }
   })
 </script>
+
+
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="copyright">
+            &copy; Copyright <strong><span>LostButFound</span></strong>. All Rights Reserved
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" class="social-icon" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" class="social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:email@example.com" class="social-icon" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
     </div>
-    <div class="credits">
-      Template Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </footer><!-- End Footer -->
+</footer>
+<!-- End Footer -->
+
+
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    
@@ -79,3 +95,6 @@
 
 <!-- Template Main JS File -->
 <script src="<?= base_url ?>assets/js/main.js"></script>
+
+<!-- Custom JS File -->
+<script src="<?= base_url ?>assets/js/custom.js"></script>
